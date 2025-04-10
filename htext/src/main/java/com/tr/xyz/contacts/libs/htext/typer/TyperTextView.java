@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 
-import com.tr.xyz.contacts.R;
+import com.tr.xyz.contacts.libs.htext.R;
 import com.tr.xyz.contacts.libs.htext.base.AnimationListener;
 import com.tr.xyz.contacts.libs.htext.base.HTextView;
 

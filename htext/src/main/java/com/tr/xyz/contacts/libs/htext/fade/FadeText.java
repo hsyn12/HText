@@ -9,7 +9,7 @@ import android.text.Layout;
 import android.util.AttributeSet;
 import android.view.animation.LinearInterpolator;
 
-import com.tr.xyz.contacts.R;
+import com.tr.xyz.contacts.libs.htext.R;
 import com.tr.xyz.contacts.libs.htext.base.DefaultAnimatorListener;
 import com.tr.xyz.contacts.libs.htext.base.HText;
 import com.tr.xyz.contacts.libs.htext.base.HTextView;
@@ -33,7 +33,7 @@ public class FadeText extends HText {
    public void init(HTextView hTextView, AttributeSet attrs, int defStyle) {
 
       super.init(hTextView, attrs, defStyle);
-      TypedArray typedArray       = hTextView.getContext().obtainStyledAttributes(attrs, R.styleable.FadeTextView);
+      TypedArray typedArray       = hTextView.getContext().obtainStyledAttributes(attrs, com.tr.xyz.contacts.libs.htext.R.styleable.FadeTextView);
       int        DEFAULT_DURATION = 2000;
       animationDuration = typedArray.getInt(R.styleable.FadeTextView_animationDuration, DEFAULT_DURATION);
       typedArray.recycle();
